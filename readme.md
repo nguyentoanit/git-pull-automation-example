@@ -15,6 +15,7 @@ yum install sudo
 ```
 mkdir /var/www/.ssh
 chmod -R 777 /var/www/.ssh/
+chmod -R 777 /path/to/project/.git/
 ```
 - Generate a ssh key by web server user:
 ```
