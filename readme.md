@@ -1,6 +1,10 @@
 # How to create migration database and git pull code automatic
 ## Environment
-
+- OS: Centos 6.9
+- Web server: Apache
+- PHP 5.6.32
+- Git 1.7.1
+- Laravel 5.4
 
 ## Step by Steps
 - Install ```sudo``` by command:
@@ -34,3 +38,9 @@ git remote add origin <remote url>
 git remote add origin git@github.com:nguyentoanit/git-pull-automation-example.git
 ```
 - I have written a demo by Laravel framwork. If you want migrate database, you will have to configure environment in Laravel. Create ```.env``` file and configure environment.
+- A few important file in my demo:
+```
+\path\to\project\routes\web.php
+\path\to\project\app\Http\Controllers\MigrationController.php
+\path\to\project\resources\views\migration.blade.php
+```
