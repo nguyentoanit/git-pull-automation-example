@@ -8,7 +8,7 @@
         <div class="container">
             <div class="alert alert-info">
                   <strong>Info:</strong>
-                  <code>{{ $output }}</code>
+                  <pre>{{ $output }}</pre>
             </div>
             <div class="row">
                 <div class="col-sm-6" style="text-align: center;"><a href="/migration/code" class="btn btn-primary">Migrate code</a></div>
