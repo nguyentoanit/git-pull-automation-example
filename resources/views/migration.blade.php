@@ -11,8 +11,9 @@
                   <pre>{{ $output }}</pre>
             </div>
             <div class="row">
-                <div class="col-sm-6" style="text-align: center;"><a href="/migration/code" class="btn btn-primary">Migrate code</a></div>
-                <div class="col-sm-6" style="text-align: center;"><a href="/migration/database" class="btn btn-info">Migrate database</a></div>
+                <div class="col-sm-4" style="text-align: center;"><a title="To pull latest source codes on Server " href="/migration/code" class="btn btn-primary">Migrate Code</a></div>
+                <div class="col-sm-4" style="text-align: center;"><a title="To drop all tables from the database and then execute the migrate command" href="/migration/database-fresh" class="btn btn-info">Migrate Database Fresh</a></div>
+                <div class="col-sm-4" style="text-align: center;"><a title="To run all of your outstanding migrations, execute the migrate Artisan command" href="/migration/database-migrate" class="btn btn-info">Migrate Database</a></div>
             </div>
         </div>
     </body>
