@@ -25,7 +25,7 @@ sudo -H -u <web server user> bash -c 'ssh-keygen -t rsa -b 4096 -C "your_email@e
 ```
 sudo -H -u apache bash -c 'ssh-keygen -t rsa -b 4096 -C "your_email@example.com"'
 ```
-- After you generate a ssh keygen. You get ssh public key at /var/www/.ssh/<file-name>.pub and insert it into your git repository. In the next time, You can pull latest source code from repository without input password.
+- After you generate a ssh keygen. You get ssh public key at /var/www/.ssh/file-name.pub and insert it into your git repository. In the next time, You can pull latest source code from repository without input password.
 - Testing with web server user. For example with apache user:
 ```
 sudo -H -u apache bash -c 'git pull https://github.com/nguyentoanit/git-pull-automation-example.git master'
