@@ -29,6 +29,16 @@ class MigrationController extends Controller
                 return view('migration', ['output' => 'Welcome Migration page']);
                 break;
         }
+
+        //Send message to Chatwork
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,"https://api.chatwork.com/v2/rooms/{room-id}/messages");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,"body=".urlencode($output);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-ChatWorkToken: {Access-token}'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_exec ($ch);
+        curl_close ($ch);
         return view('migration', ['output' => $output]);
     }
 }
