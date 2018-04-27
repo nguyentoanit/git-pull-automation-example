@@ -6,6 +6,12 @@
 - Git 1.7.1
 - Laravel 5.4
 
+## Features
+- Pull source code from Git repository
+- Migrate database
+- Refesh database
+- Switch branch (Git)
+
 ## Step by Steps
 - Install ```sudo``` by command:
 ```
